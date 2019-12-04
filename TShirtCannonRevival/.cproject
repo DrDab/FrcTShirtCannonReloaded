@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?fileVersion 4.0.0?><cproject storage_type_id="org.eclipse.cdt.core.XmlProjectDescriptionStorage">
+    	
+    <storageModule moduleId="org.eclipse.cdt.core.settings">
+        		
+        <cconfiguration id="com.penfieldrobotics.criotools.projtype.debug.48135838">
+            			
+            <storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="com.penfieldrobotics.criotools.projtype.debug.48135838" moduleId="org.eclipse.cdt.core.settings" name="cRIODebug">
+                				
+                <externalSettings>
+                    					
+                    <externalSetting>
+                        						
+                        <entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/TShirtCannonRevival"/>
+                        						
+                        <entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/TShirtCannonRevival/cRIODebug"/>
+                        						
+                        <entry flags="RESOLVED" kind="libraryFile" name="TShirtCannonRevival" srcPrefixMapping="" srcRootPath=""/>
+                        					
+                    </externalSetting>
+                    				
+                </externalSettings>
+                				
+                <extensions>
+                    					
+                    <extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+                    					
+                    <extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+                    					
+                    <extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+                    					
+                    <extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+                    					
+                    <extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+                    				
+                </extensions>
+                			
+            </storageModule>
+            			
+            <storageModule moduleId="cdtBuildSystem" version="4.0.0">
+                				
+                <configuration artifactExtension="so" artifactName="${ProjName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.sharedLib" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.sharedLib,org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.debug" description="" id="com.penfieldrobotics.criotools.projtype.debug.48135838" name="cRIODebug" parent="com.penfieldrobotics.criotools.projtype.debug" postbuildStep="powerpc-wrs-vxworks-nm &quot;${ProjDirPath}/${ConfigName}/${BuildArtifactFileName}&quot; | tclsh &quot;${WIND_BASE}/host/resource/hutils/tcl/munch.tcl&quot; -c ppc | sed &quot;s/extern void\(.*\);/extern void \1 __attribute__((externally_visible));/&quot; &gt; &quot;${ProjDirPath}/${ConfigName}/ctdt.c&quot;  &amp;&amp; powerpc-wrs-vxworks-gcc -c &quot;${ProjDirPath}/${ConfigName}/ctdt.c&quot; -o ctdt.o -DCPU=PPC603 -DTOOL_FAMILY=gnu -DTOOL=gnu -D_WRS_KERNEL -fmessage-length=0  -mcpu=603 -mstrict-align -mlongcall &amp;&amp;  powerpc-wrs-vxworks-g++ &quot;${ProjDirPath}/${ConfigName}/ctdt.o&quot; &quot;${ProjDirPath}/${ConfigName}/${BuildArtifactFileName}&quot; -o &quot;${ProjDirPath}/${ConfigName}/${BuildArtifactFileName}.out&quot; -DCPU=PPC603 -DTOOL_FAMILY=gnu -DTOOL=gnu -D_WRS_KERNEL -fmessage-length=0  -mcpu=603 -mstrict-align -mlongcall -r -Wl,-X -static -T &quot;${WIND_BASE}\..\share\ldscripts\dkm.ld&quot; &amp;&amp;  powerpc-wrs-vxworks-stripsyms.bat &quot;${ProjDirPath}/${ConfigName}/${BuildArtifactFileName}.out&quot; &quot;${WIND_BASE}\..\lib\libstdc++.a&quot; &quot;${WIND_BASE}\..\lib\libsupc++.a&quot; &quot;${WIND_BASE}\..\..\lib\gcc\powerpc-wrs-vxworks\4.8.2\libgcc.a&quot;">
+                    					
+                    <folderInfo id="com.penfieldrobotics.criotools.projtype.debug.48135838." name="/" resourcePath="">
+                        						
+                        <toolChain id="com.penfieldrobotics.criotools.projtype.debug.tools.1239057874" name="Thunder cRIO Tools" superClass="com.penfieldrobotics.criotools.projtype.debug.tools">
+                            							
+                            <option id="com.penfieldrobotics.criotools.crosstools.prefix.1145549132" superClass="com.penfieldrobotics.criotools.crosstools.prefix" value="powerpc-wrs-vxworks-" valueType="string"/>
+                            							
+                            <option id="com.penfieldrobotics.criotools.crosstools.path.153882152" superClass="com.penfieldrobotics.criotools.crosstools.path" value="&quot;${WIND_BASE}/../../bin/&quot;" valueType="string"/>
+                            							
+                            <targetPlatform binaryParser="org.eclipse.cdt.core.ELF" id="com.penfieldrobotics.criotools.crosstools.tgtplatform.549981896" isAbstract="false" name="Thunder cRIO Tools Target Platform" superClass="com.penfieldrobotics.criotools.crosstools.tgtplatform"/>
+                            							
+                            <builder buildPath="${workspace_loc:/TShirtCannonRevival}/cRIODebug" id="com.penfieldrobotics.criotools.crosstools.builder.266770101" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="Thunder cRIO Tools Builder" superClass="com.penfieldrobotics.criotools.crosstools.builder"/>
+                            							
+                            <tool id="com.penfieldrobotics.criotools.crosstools.ccompiler.784868060" name="Thunder cRIO Tools C Compiler" superClass="com.penfieldrobotics.criotools.crosstools.ccompiler">
+                                								
+                                <option defaultValue="gnu.c.optimization.level.none" id="gnu.c.compiler.option.optimization.level.459505420" name="Optimization Level" superClass="gnu.c.compiler.option.optimization.level" useByScannerDiscovery="false" valueType="enumerated"/>
+                                								
+                                <option defaultValue="gnu.c.debugging.level.max" id="gnu.c.compiler.option.debugging.level.479135823" name="Debug Level" superClass="gnu.c.compiler.option.debugging.level" useByScannerDiscovery="false" valueType="enumerated"/>
+                                								
+                                <option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="gnu.c.compiler.option.include.paths.814146826" superClass="gnu.c.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;C:\Users\YukiLeopard\eclipse-workspace\TShirtCannonRevival\include&quot;"/>
+                                    								
+                                </option>
+                                								
+                                <inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.14522234" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
+                                							
+                            </tool>
+                            							
+                            <tool id="com.penfieldrobotics.criotools.crosstools.cppcompiler.1293172624" name="Thunder cRIO Tools C++ Compiler" superClass="com.penfieldrobotics.criotools.crosstools.cppcompiler">
+                                								
+                                <option id="gnu.cpp.compiler.option.optimization.level.1019479687" name="Optimization Level" superClass="gnu.cpp.compiler.option.optimization.level" useByScannerDiscovery="false" value="gnu.cpp.compiler.optimization.level.none" valueType="enumerated"/>
+                                								
+                                <option defaultValue="gnu.cpp.compiler.debugging.level.max" id="gnu.cpp.compiler.option.debugging.level.616392993" name="Debug Level" superClass="gnu.cpp.compiler.option.debugging.level" useByScannerDiscovery="false" valueType="enumerated"/>
+                                								
+                                <option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="gnu.cpp.compiler.option.include.paths.448944447" superClass="gnu.cpp.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;C:\Users\YukiLeopard\eclipse-workspace\TShirtCannonRevival\include&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${WIND_BASE}/../include/WPILib&quot;"/>
+                                    								
+                                </option>
+                                								
+                                <option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="gnu.cpp.compiler.option.preprocessor.def.422083314" superClass="gnu.cpp.compiler.option.preprocessor.def" useByScannerDiscovery="false" valueType="definedSymbols">
+                                    									
+                                    <listOptionValue builtIn="false" value="CPU=PPC603"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="TOOL_FAMILY=gnu"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="TOOL=gnu"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="_WRS_KERNEL"/>
+                                    								
+                                </option>
+                                								
+                                <option id="gnu.cpp.compiler.option.other.other.1601834197" superClass="gnu.cpp.compiler.option.other.other" useByScannerDiscovery="false" value="-c -fmessage-length=0 -mcpu=603 -mstrict-align -mlongcall" valueType="string"/>
+                                								
+                                <inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.1170426344" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
+                                							
+                            </tool>
+                            							
+                            <tool id="com.penfieldrobotics.criotools.crosstools.partiallinker.1362646970" name="Thunder cRIO Tools Partial Linker" superClass="com.penfieldrobotics.criotools.crosstools.partiallinker">
+                                								
+                                <option defaultValue="true" id="gnu.cpp.link.option.shared.905477988" name="Shared (-shared)" superClass="gnu.cpp.link.option.shared" value="false" valueType="boolean"/>
+                                								
+                                <option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="gnu.cpp.link.option.libs.2090097482" superClass="gnu.cpp.link.option.libs" valueType="libs">
+                                    									
+                                    <listOptionValue builtIn="false" value="wpilib"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="supc++"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="stdc++"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="gcc"/>
+                                    								
+                                </option>
+                                								
+                                <option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="gnu.cpp.link.option.paths.646025971" superClass="gnu.cpp.link.option.paths" valueType="libPaths">
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${WIND_BASE}/../lib&quot;"/>
+                                    								
+                                </option>
+                                								
+                                <option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="gnu.cpp.link.option.other.11505603" superClass="gnu.cpp.link.option.other" valueType="stringList">
+                                    									
+                                    <listOptionValue builtIn="false" value="-X"/>
+                                    								
+                                </option>
+                                								
+                                <option id="gnu.cpp.link.option.flags.1300878299" superClass="gnu.cpp.link.option.flags" value=" -mcpu=603 -mstrict-align -mlongcall -static -r" valueType="string"/>
+                                								
+                                <option id="gnu.cpp.link.option.nostdlibs.171576606" superClass="gnu.cpp.link.option.nostdlibs" value="true" valueType="boolean"/>
+                                								
+                                <inputType id="cdt.managedbuild.tool.gnu.cpp.linker.input.1276074803" superClass="cdt.managedbuild.tool.gnu.cpp.linker.input">
+                                    									
+                                    <additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+                                    									
+                                    <additionalInput kind="additionalinput" paths="$(LIBS)"/>
+                                    								
+                                </inputType>
+                                							
+                            </tool>
+                            						
+                        </toolChain>
+                        					
+                    </folderInfo>
+                    					
+                    <sourceEntries>
+                        						
+                        <entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="include"/>
+                        						
+                        <entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
+                        					
+                    </sourceEntries>
+                    				
+                </configuration>
+                			
+            </storageModule>
+            			
+            <storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+            		
+        </cconfiguration>
+        	
+    </storageModule>
+    	
+    <storageModule moduleId="cdtBuildSystem" version="4.0.0">
+        		
+        <project id="TShirtCannonRevival.com.penfieldrobotics.criotools.projtype.47777895" name="Shared Library" projectType="com.penfieldrobotics.criotools.projtype"/>
+        	
+    </storageModule>
+    	
+    <storageModule moduleId="scannerConfiguration">
+        		
+        <autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+        		
+        <scannerConfigBuildInfo instanceId="com.penfieldrobotics.criotools.projtype.debug.48135838;com.penfieldrobotics.criotools.projtype.debug.48135838.;com.penfieldrobotics.criotools.crosstools.cppcompiler.1293172624;cdt.managedbuild.tool.gnu.cpp.compiler.input.1170426344">
+            			
+            <autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+            		
+        </scannerConfigBuildInfo>
+        		
+        <scannerConfigBuildInfo instanceId="com.penfieldrobotics.criotools.projtype.debug.48135838;com.penfieldrobotics.criotools.projtype.debug.48135838.;com.penfieldrobotics.criotools.crosstools.ccompiler.784868060;cdt.managedbuild.tool.gnu.c.compiler.input.14522234">
+            			
+            <autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+            		
+        </scannerConfigBuildInfo>
+        	
+    </storageModule>
+    	
+    <storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
+    	
+    <storageModule moduleId="refreshScope"/>
+    	
+    <storageModule moduleId="org.eclipse.cdt.make.core.buildtargets"/>
+    
+</cproject>

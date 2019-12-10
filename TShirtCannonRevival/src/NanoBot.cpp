@@ -189,7 +189,7 @@ public:
         //
         // Read pressure gauge.
         //
-        LCDPrintf((LCD_LINE4, "PSI=%5.1f",
+        LCDPrintf((LCD_LINE3, "PSI=%5.1f",
                    (m_pressureGauge.GetVoltage() - 0.5)*25.0));
         //
         // DriveBase operation.

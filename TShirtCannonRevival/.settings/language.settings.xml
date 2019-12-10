@@ -11,7 +11,7 @@
             			
             <provider-reference id="org.eclipse.cdt.managedbuilder.core.MBSLanguageSettingsProvider" ref="shared-provider"/>
             			
-            <provider class="com.penfieldrobotics.criotools.ThunderCrossGCCBuiltinSpecsDetector" console="false" env-hash="-1156830979640661573" id="com.penfieldrobotics.criotools.langprov.thundercrossgccspecsdetect" keep-relative-paths="false" name="Thunder cRIO Tools GCC Specs Detector" parameter="${COMMAND} ${FLAGS} -E -P -v -dD &quot;${INPUTS}&quot;" prefer-non-shared="true">
+            <provider class="com.penfieldrobotics.criotools.ThunderCrossGCCBuiltinSpecsDetector" console="false" env-hash="50118433288760587" id="com.penfieldrobotics.criotools.langprov.thundercrossgccspecsdetect" keep-relative-paths="false" name="Thunder cRIO Tools GCC Specs Detector" parameter="${COMMAND} ${FLAGS} -E -P -v -dD &quot;${INPUTS}&quot;" prefer-non-shared="true">
                 				
                 <language-scope id="org.eclipse.cdt.core.gcc"/>
                 				

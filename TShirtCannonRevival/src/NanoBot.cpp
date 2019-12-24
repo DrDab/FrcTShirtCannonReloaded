@@ -194,7 +194,7 @@ public:
         //
         // DriveBase operation.
         //
-        float x = m_leftDriveStick.GetXWithDeadband(true);
+        float x = m_rightDriveStick.GetXWithDeadband(true);
         float y = m_rightDriveStick.GetYWithDeadband(true);
         float rot = m_rightDriveStick.GetZWithDeadband(true);
         LCDPrintf((LCD_LINE5, "x=%5.1f,y=%5.1f", x, y));
